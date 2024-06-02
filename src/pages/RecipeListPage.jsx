@@ -67,7 +67,6 @@ export const RecipeListPage = ({ clickFn }) => {
       </RadioGroup>
       <Flex justify='center' wrap='wrap' gap={8}>
         {matchedRecipes.map(recipe => (
-          // Maybe put <AspectRatio> inside <RecipeCard> and pass the breakpoints and ratio, to speed up image loading
           <AspectRatio
             key={recipe.label}
             w={{ base: '90vw', md: '40vw', lg: '30vw', xl: '22vw' }}
